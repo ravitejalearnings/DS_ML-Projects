@@ -15,7 +15,7 @@ Summarize the main objective of the project.
 ## Project Workflow
 
 ### 1. Load Libraries
-Load all necessary libraries and dependencies for the project.
+- **Load all necessary libraries and dependencies for the project.
 
 ### 2. Import Data
 - Merge data to get a holistic view.
