@@ -62,13 +62,13 @@ Summarize the main objective of the project.
 - **Optimization**: Use Optuna for parameter tuning.
 
 ### 8. Model Evaluation
-Evaluate model performance using suitable metrics.
+- Evaluate model performance using suitable metrics.
 
 ### 9. Build UI Framework Using Streamlit
-Create an interactive UI for the model using Streamlit.
+- Create an interactive UI for the model using Streamlit.
 
 ### 10. Model Deployment
-Deploy the model to a production environment.
+- Deploy the model to a production environment.
 
 ---
 
