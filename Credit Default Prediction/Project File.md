@@ -1,7 +1,7 @@
 # Project Title
 
 ## Business Problem
-Briefly describe the business problem your project aims to address.
+- Briefly describe the business problem your project aims to address.
 
 ## Project Objective
 Summarize the main objective of the project.
