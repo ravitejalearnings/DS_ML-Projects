@@ -1,0 +1,13 @@
+import libraries
+load data
+Rename columns if neccessary
+Handle null values
+check for duplicates
+categorical variables
+numerical variables
+check for Outliers using boxplot
+treat outliers using iqr
+univariate analysis (distribution, counts/frequency)
+bivariate analysis (crosstab, groupby)
+Feature engineering (adding or removal features)
+label 
