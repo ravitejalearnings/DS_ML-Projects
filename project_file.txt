@@ -10,4 +10,13 @@ treat outliers using iqr
 univariate analysis (distribution, counts/frequency)
 bivariate analysis (crosstab, groupby)
 Feature engineering (adding or removal features)
-label 
+label encoding for ordinal values
+OHE for nominal values
+correlation for numerical values
+data scaling (minmaxscaler, standard scaler)
+data scaling before applying VIF
+Model training
+Model evaluation
+hyper parameter tunning
+Error Analysis
+Model export (joblib,pickel)
