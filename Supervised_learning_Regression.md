@@ -1,7 +1,7 @@
-Types of Regression
-  Linear Regression
-    Simple Linear Regression
-        Train-Test Split
+## Types of Regression
+  - Linear Regression
+  -  Simple Linear Regression
+        -Train-Test Split
     Multiple Linear Regression
         Overfitting and Underfitting
   Non-Linear Regression
@@ -19,3 +19,11 @@ Regularization Techniques
 Hyperparameter Tuning
         GridSearchCV
         RandomSearchCV
+
+
+## Load Data
+- `shape`
+- `info()`
+- `describe()`
+- `isna().sum()`
+- `isduplicated().sum()`
