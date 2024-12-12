@@ -6,24 +6,17 @@
         -Overfitting and Underfitting
   - Non-Linear Regression
         - Polynomial Regression
-- Model Evaluation and Validation
+## Model Evaluation and Validation
         - Cross-Validation Techniques
     - Performance Metrics for Regression
         - Mean Squared Error (MSE)
         - Root Mean Squared Error (RMSE)
         - Mean Absolute Error (MAE)
         - R-Squared
-- Regularization Techniques
+## Regularization Techniques
         - Lasso Regression
         - Ridge Regression
-- Hyperparameter Tuning
+## Hyperparameter Tuning
         - GridSearchCV
         - RandomSearchCV
 
-
-## Load Data
-- `shape`
-- `info()`
-- `describe()`
-- `isna().sum()`
-- `isduplicated().sum()`
