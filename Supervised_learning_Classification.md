@@ -1,6 +1,6 @@
 Supervised Learning: Classification
 
-## Binary Classification
+# Binary Classification
     - Logistic Regression
     - Mathematical Concept of Logistic Regression
     - Example with Breast Cancer Dataset
