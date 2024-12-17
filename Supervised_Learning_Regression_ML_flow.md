@@ -9,6 +9,9 @@
 - `isna().sum()`
 - `isduplicated().sum()`
 - `columns`
+- 'value_counts()'
+- 'unique()'
+- 'nunique()'
 
 ## EDA (Exploratory Data Analysis)
 ### Univariate Analysis
