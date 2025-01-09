@@ -186,6 +186,11 @@
     One Hot encoding:
             cols_to_encode = ['col1',''col2','col3']
             df[cols_to_encode] = pd.get_dummies(data= df, columns= cols_to_encode, drop_first=True, dtype='int8') 
+
+## row mismatch while split/transformations/encoding
+            when row mismatch happens while implementing ohe,iqr between X_train,y_train, 
+            this can be handled using index.intersection between X_train & y_train
+            X_train.index.intersection(y_train.index)
         
     
                 
