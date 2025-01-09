@@ -130,6 +130,24 @@
     TN (true negative) : models tries to predict negative class (0) and actual outcome is  negative (0)
     FP (false positive) : models tries to predict postive class (1) and actual outcome is  negative (0)
     FN (false negative) : models tries to predict negative class (0) and actual outcome is  positive (1)
+
+
+## IQR (inter quartile range)
+    def get_iqr(df, col):
+        q1 = df[col].quantile(0.25)
+        q3 = df[col].quantile(0.75)
+        iqr = q3-q1
+        lower_bound = q1 - 1.5*iqr
+        upper_bound = q3 + 1.5*1qr
+        return (lower_bound, upper_bound)
+
+## VIF (variance inflation factor)
+    def get_vif(data):
+        vif_df = pd.DataFrame()
+        vif_df['features'] = data.columns
+        vif_df['values'] = [variance_inflation_factor(data.values, i )for i in range(data.shape[1])]
+        return vif_df
+    
                 
             
         
