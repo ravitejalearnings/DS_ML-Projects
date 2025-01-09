@@ -141,12 +141,52 @@
         upper_bound = q3 + 1.5*1qr
         return (lower_bound, upper_bound)
 
-## VIF (variance inflation factor)
-    def get_vif(data):
-        vif_df = pd.DataFrame()
-        vif_df['features'] = data.columns
-        vif_df['values'] = [variance_inflation_factor(data.values, i )for i in range(data.shape[1])]
-        return vif_df
+## VIF (variance inflation factor): technique to detect multicollinearity
+- Applicable only to numerical features.
+- before applying VIF, features needs to be scaled
+
+        def get_vif(data):
+            vif_df = pd.DataFrame()
+            vif_df['features'] = data.columns
+            vif_df['values'] = [variance_inflation_factor(data.values, i )for i in range(data.shape[1])]
+            return vif_df
+
+## feature selection technique's
+    Filter methods :    based on statistical measures to score features. They are independent of machine learning algorithms
+            Correlation-based selection: Remove features with high correlation
+            Chi-Square Test: Measures the dependency between categorical features and the target variable
+            Mutual Information: Evaluates the dependency between variables
+            Variance Threshold: Removes features with low variance.
+            ANOVA (Analysis of Variance): Measures the variance between groups to select features.
+            Information Gain: Measures the reduction in entropy after splitting on a feature.
+            F-Test: Tests if a feature is linearly correlated with the target.
+            
+    Wrapper methods :    use a predictive model to evaluate feature combinations and iteratively select the best subset.
+            Recursive Feature Elimination (RFE): Selects features by recursively removing the least significant features.
+            
+    Embeded methods :    combine feature selection with model training. They are part of the learning algorithm itself
+            LASSO (L1 Regularization): Shrinks coefficients of less important features to zero.
+            Ridge Regression (L2 Regularization): Penalizes large coefficients but does not eliminate features.
+            Elastic Net: Combines L1 and L2 regularization for feature selection.
+            Tree-based Methods: Models like Random Forest, XGBoost, and LightGBM provide feature importance scores.
+            Regularized Logistic Regression: Selects features during the training process.
+            Gradient Boosting Feature Importance: Uses the importance scores derived from boosting models
+
+## Encoding:
+    label encoding: applied to ordinal variables like salary = (low,medium,high)
+            salary_mapping = {'low':1, 'medium':2, 'high':3}
+            
+    Target encoding: applied to high cardinality features like models, brands, company etc
+            cols_to_te = ['col1',''col2','col3']
+            encoder = TargetEncoder(smoothing=0.3)
+            encoder.fit(X_train[cols_to_te], y_train)
+            X_train[cols_to_te] = encoder.transform(X_train[cols_to_te])
+            X_test[cols_to_te] = encoder.transform(X_test[cols_to_te])
+            
+    One Hot encoding:
+            cols_to_encode = ['col1',''col2','col3']
+            df[cols_to_encode] = pd.get_dummies(data= df, columns= cols_to_encode, drop_first=True, dtype='int8') 
+        
     
                 
             
