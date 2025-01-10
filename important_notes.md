@@ -203,12 +203,49 @@
                     
                 ginni impurity: goal of GI is to split dataset such that each node is as pure as possible.
                                 approach to calculate GI is probabilistic
-                                calculated weighted sum 
+                                calculated weighted sum of squared probabilites
                                 least GI is considered as best split
                 information gain: goal of IG is to split dataset such that each node is as pure as possible
                                 approach to calculate IG is (probability * log(probability))
                                  calculated weighted sum 
                                 highest IG is considered as best split
+
+## Understanding Ensemble learning:
+            Technique in ml where multiple models are combined to improve overall performance
+            we do average prediction like in bagging
+            we combined models strategically like in boosting to reduce errors & improve accuracy
+
+            Basic techniques:
+                    majority voting: used in classification problems
+                    average: used in regression problems
+                    weight average: used in regression problems
+            Advanced techniques:
+                    Bagging:
+                    Boosting:
+                    stacking:
+
+ ## Understanding Bagging (Random Forest):
+            bagging refers to process of randomly sampling subset of data with replacement.
+            bagging also known as "booststrap aggregating" 
+            each model(base learners or weak learners) will pick random subsets of data with replacement, which means a subset of data be have duplicates.
+            since its random forest, all base learners are decision tree's.
+            this helps reduce variance and improve model's stability & accuracy.
+
+            benefits of bagging:
+                robust against outliers.
+                reduction in variance
+                good way to handle high dimensionlaity
+                parallel processing, means each base learners can be runned a same time, then aggregated
+
+            benefits of Random forest:
+                we can do row sampling & column sampling
+                robust to outliers
+                by implementing row & column sampling, helps in reducing variance & improve's model accuracy
+            
+                
+                
+            
+             
                             
             
         
