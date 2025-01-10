@@ -191,6 +191,26 @@
             when row mismatch happens while implementing ohe,iqr between X_train,y_train, 
             this can be handled using index.intersection between X_train & y_train
             X_train.index.intersection(y_train.index)
+
+## Understanding decision tree:
+            decision tree have data points
+            data points split into node
+            quality of node is entropy
+            entropy: is a measure of how much randomness we have for each node. 
+                    goal is to reduce randomness in each node, so that node can have either of class 0 or 1
+                    low entropy means low randomness/low chiaos
+                    low entropy means high information gain IG
+                    
+                ginni impurity: goal of GI is to split dataset such that each node is as pure as possible.
+                                approach to calculate GI is probabilistic
+                                calculated weighted sum 
+                                least GI is considered as best split
+                information gain: goal of IG is to split dataset such that each node is as pure as possible
+                                approach to calculate IG is (probability * log(probability))
+                                 calculated weighted sum 
+                                highest IG is considered as best split
+                            
+            
         
     
                 
