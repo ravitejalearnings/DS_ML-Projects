@@ -1,4 +1,4 @@
-## Simple code for solving regression models in one go:
+## Code Snippet for solving regression models in one go:
 
     def function_name(model_name, X_train, X_test, y_train, y_test):
     models = {
@@ -31,7 +31,7 @@
             }
 
 
-## Simple code for solving classification models in one go:
+## Code Snippet for solving classification models in one go:
 
     def functiona_name(model_name, X_train, X_test, y_train, y_test): #input values
     
