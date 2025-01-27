@@ -4,5 +4,4 @@ seaborn
 sqlalchemy
 pymysql
 streamlit
-LabelEncoder          
-                            
+LabelEncoder
