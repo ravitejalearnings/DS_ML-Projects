@@ -1,8 +1,0 @@
-pandas
-matplotlib
-seaborn
-sqlalchemy
-pymysql
-streamlit
-scikit-learn
-xgboost
